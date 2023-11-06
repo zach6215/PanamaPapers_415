@@ -2,6 +2,7 @@ from neo4j import GraphDatabase
 import pprint
 
 #set password, username, and URI
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!WARNING THESE KEYS AND INPUTS ARE FOR A TEST DATABASE NOT THE PANAMA PAPERS DATABASE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 NEO4J_URI = "neo4j+s://aa253cbe.databases.neo4j.io" #"neo4j+s://25b10ebc.databases.neo4j.io"
 NEO4J_USERNAME = "neo4j"
 NEO4J_PASSWORD = "HSxe0WvTIH1XYojKVBePL05s8fro09AEznwXN-vc4Y4" #"LuxCPqYg2HjZG4GN_-UVte3pUXtpAI7t-8qMvBBuijE"
