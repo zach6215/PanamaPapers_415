@@ -13,9 +13,9 @@ driver = GraphDatabase.driver(URI, auth=AUTH)
 
 driver.verify_connectivity()
 
-# def shortest_path(driver, nodeA, nodeB):
-#     query = f"MATCH p = shortestPath((A)-[:LINK*]-(B)) WHERE A.name = '{nodeA}' AND B.name = '{nodeB}' RETURN [n in nodes(p) | n.name] AS stops"
-#     print(list(driver.execute_query(query)))
-#
-# shortest_path(driver, "Bromsgrove", "Worcester Foregate Street")
+def shortest_path(driver, nodeA, nodeB):
+     query = f"MATCH p = shortestPath((A)-[:LINK*]-(B)) WHERE A.name = '{nodeA}' AND B.name = '{nodeB}' RETURN [n in nodes(p) | n.name] AS stops"
+     print(list(driver.execute_query(query)))
+
+shortest_path(driver, "Bromsgrove", "Worcester Foregate Street")
 
